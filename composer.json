@@ -1,6 +1,7 @@
 {
     "name": "laraman/beyonic",
     "description": "Laravel package for working with Beyonic Mobile Money APIs",
+    "keywords": ["library", "laravel", "php", "payments", "mobile money", "beyonic"],
     "type": "library",
     "require": {
         "beyonic/beyonic-php": "*"
