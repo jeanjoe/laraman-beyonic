@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "cc81b0eb92ab8ed8d18cd4ecff3d6616",
+    "packages": [
+        {
+            "name": "beyonic/beyonic-php",
+            "version": "0.0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beyonic/beyonic-php.git",
+                "reference": "c4b00a9fd0adf5bcd417d8faf8d2a379d03b2614"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beyonic/beyonic-php/zipball/c4b00a9fd0adf5bcd417d8faf8d2a379d03b2614",
+                "reference": "c4b00a9fd0adf5bcd417d8faf8d2a379d03b2614",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/Beyonic/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Beyonic",
+                    "homepage": "http://beyonic.com"
+                }
+            ],
+            "description": "Beyonic PHP Library",
+            "homepage": "http://beyonic.com",
+            "keywords": [
+                "Mobile Payments",
+                "api",
+                "beyonic",
+                "mobile money",
+                "mpesa"
+            ],
+            "time": "2019-07-07T18:41:12+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

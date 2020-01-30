@@ -1,0 +1,34 @@
+{
+    "name": "laraman/beyonic",
+    "description": "Laravel package for working with Beyonic Mobile Money APIs",
+    "type": "library",
+    "require": {
+        "beyonic/beyonic-php": "^0.0.15"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manzede Benard",
+            "email": "manzede@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Laraman\\Beyonic\\": "src/"
+        },
+        "files": [
+            "vendor/beyonic/beyonic-php/lib/Beyonic.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraman\\Beyonic\\BeyonicServiceProvider"
+            ],
+            "aliases": {
+                "LaramanBeyonic": "Laraman\\Beyonic\\Facades\\BeyonicFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
