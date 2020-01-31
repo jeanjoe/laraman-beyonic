@@ -9,7 +9,7 @@ Laraman Beyonic is a Laravel package for working with [Beyonic Mobile Money APIs
 
 ### Note
 
-- For **NOW** this packages works with **Collection Requests**. More options are coming soon.
+- For **NOW** this packages works with **Collection Requests, Collections and Payments**. More options are coming soon.
 
 ## Installation
 
@@ -60,13 +60,38 @@ use LaramanBeyonic;
 
 - To make collection request, you can use the following methods.
 
-|Method Description|Method|Expects Argument|
-|------------------|------|-----------------|
-| Make Collection Request | `createCollection()` | Mandatory|
-| Get all Collections | `getAllCollections()` | Optional |
-| Get a Collection | `getCollection()` | optional |
-| Update a Collection | `updateCollection()` | mandatory |
-| Delete a Collection | `deleteCollection()` | mandatory |
+|Method Description|Method| Argument | Expects Argument| Comment |
+|------------------|------|----------|-----------------|---------|
+| Make Collection Request | `createCollectionRequest()` | $data | Mandatory | Array of objects|
+| Get all Collection Requests|`getAllCollectionRequests()`|$data or NULL|Optional| You can get All or Filter records| 
+| Get a Collection Request|`getCollectionRequest()`|$data|Mandatory|Get a specific record|
+| Update a Collection Request|`updateCollectionRequest()`|$data, $id|Mandatory | You must have permission|
+| Delete a Collection Request|`deleteCollectionRequest()`|$id| Mandatory |You must have permission|
+
+
+#### Collections.
+
+- To manage your collections, you can use the following methods.
+
+|Method Description|Method| Argument | Expects Argument| Comment |
+|------------------|------|----------|-----------------|---------|
+| Get all Collections|`getCollections()`|$data or NULL|Optional| You can get All or Filter records| 
+| Get a Collection|`getCollection()`|$data|Mandatory|Get a specific record|
+| Delete a Collection Request|`deleteCollection()`|$id| Mandatory |You must have permission|
+
+
+#### Payments.
+
+- To send money to (Pay) mobile users, you can use the following methods.
+
+|Method Description|Method| Argument | Expects Argument| Comment |
+|------------------|------|----------|-----------------|---------|
+| Make Payment Request | `createPayment()` | $data | Mandatory | Array of objects|
+| Get all Payments|`getAllPayments()`|$data or NULL|Optional| You can get All or Filter records| 
+| Get a Payment record|`getPayment()`|$data|Mandatory|Get a specific record|
+| Update Payment|`updatePayment()`|$data, $id|Mandatory | You must have permission|
+| Delete Payment|`deletePayment()`|$id| Mandatory |You must have permission|
+
 
 #### Example.
 
